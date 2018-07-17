@@ -11,8 +11,8 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'npm i -g yarn'
-                sh 'npm install' 
+                sh 'npm i -g cnpm'
+                sh 'cnpm install' 
             }
         }
         stage('Test') {
